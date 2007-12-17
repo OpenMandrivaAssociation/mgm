@@ -14,7 +14,6 @@ Source3: 	%{name}16.png
 URL:		http://linuxmafia.com/mgm/
 License:	GPL
 Group:		Monitoring
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	perl-Tk tk
 BuildArch:	noarch
 
