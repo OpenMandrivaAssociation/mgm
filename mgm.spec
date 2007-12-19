@@ -43,9 +43,15 @@ echo 'exec %_datadir/mgm/mgm' >> $RPM_BUILD_ROOT/%_bindir/%name
 chmod 755 $RPM_BUILD_ROOT/%_bindir/%name
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="MGM" longtitle="System Monitor" section="Applications/Monitoring"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=%{name}
+Name=MGM
+Comment=System Monitor
+Categories=System;Monitor;
 EOF
 
 #icons
@@ -70,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc/*
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
