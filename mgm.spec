@@ -1,18 +1,18 @@
 %define name	mgm
 %define version	1.1
-%define release %mkrel 7
+%define release %mkrel 8
 
 Name: 	 	%{name}
 Summary: 	Moaning Goat Status Meter
 Version: 	%{version}
 Release: 	%{release}
-
 Source:		%{name}-%{version}.tar.bz2
 Source1: 	%{name}48.png
 Source2: 	%{name}32.png
 Source3: 	%{name}16.png
 URL:		http://linuxmafia.com/mgm/
-License:	GPL
+License:	GPLv2
+Patch0:		mgm-1.1-fix-abs-path.patch
 Group:		Monitoring
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	perl-Tk tk
@@ -28,6 +28,7 @@ sucking down a major honking wad of RAM.
 
 %prep
 %setup -q -n %name
+%patch0 -p0
 chmod 644 `find -type f`
 chmod 755 `find -type d`
 chmod 755 mgm lib/xpm
