@@ -1,6 +1,6 @@
 %define name	mgm
 %define version	1.1
-%define release %mkrel 8
+%define release %mkrel 9
 
 Name: 	 	%{name}
 Summary: 	Moaning Goat Status Meter
