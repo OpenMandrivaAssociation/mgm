@@ -1,0 +1,15 @@
+Index: mgm
+===================================================================
+--- mgm
++++ mgm	2010-02-24 09:39:22.000000000 +0100
+@@ -22,8 +22,8 @@
+ 
+ # assume the other schtuff we need is in the standard places.
+ 
+-$moddir="$basedir/modules";
+-$libdir="$basedir/lib";
++$moddir="/usr/share/mgm";
++$libdir="/usr/share/mgm";
+ $fontfile="$libdir/helvetica2.xpm";
+ 
+ $0="moaning-goat-meter"; # OK, this is evil.
