@@ -1,7 +1,7 @@
 Summary:	Moaning Goat Status Meter
 Name:		mgm
 Version:	1.1
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		Monitoring
 Url:		http://linuxmafia.com/mgm/
