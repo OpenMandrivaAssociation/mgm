@@ -4,7 +4,7 @@ Version:	1.1
 Release:	11
 License:	GPLv2+
 Group:		Monitoring
-Url:		http://linuxmafia.com/mgm/
+Url:		https://linuxmafia.com/mgm/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
