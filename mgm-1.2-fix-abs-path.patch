@@ -1,7 +1,5 @@
-Index: mgm
-===================================================================
 --- mgm
-+++ mgm	2010-02-24 09:39:22.000000000 +0100
++++ mgm
 @@ -22,8 +22,8 @@
  
  # assume the other schtuff we need is in the standard places.

@@ -1,7 +1,7 @@
 Summary:	Moaning Goat Status Meter
 Name:		mgm
-Version:	1.1
-Release:	11
+Version:	1.2
+Release:	1
 License:	GPLv2+
 Group:		Monitoring
 Url:		https://linuxmafia.com/mgm/
@@ -9,7 +9,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
 Source3:	%{name}16.png
-Patch0:		mgm-1.1-fix-abs-path.patch
+Patch0:		mgm-1.2-fix-abs-path.patch
 Requires:	perl-Tk
 Requires:	tk
 BuildArch:	noarch
@@ -34,8 +34,8 @@ sucking down a major honking wad of RAM.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n %{name}
-%patch0 -p0
+%setup -q
+%patch -P0 -p0
 chmod 644 `find -type f`
 chmod 755 `find -type d`
 chmod 755 mgm lib/xpm
